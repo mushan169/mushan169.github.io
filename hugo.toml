@@ -1,6 +1,6 @@
 # 基本站点信息
-baseURL = "https://example.com/"   # 你的站点 URL
-languageCode = "en-us"             # 语言代码
+baseURL = "https://mushan169-github-io.pages.dev/"   # 你的站点 URL
+languageCode = "zh-cn"             # 语言代码
 title = "我的博客"                  # 网站标题
 theme = "PaperMod"                 # 使用的主题名称
 paginate = 10                      # 每页显示的文章数量
