@@ -1,4 +1,67 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme: ["PaperMod"]
+# 基本站点信息
+baseURL = "https://example.com/"   # 你的站点 URL
+languageCode = "en-us"             # 语言代码
+title = "我的博客"                  # 网站标题
+theme = "PaperMod"                 # 使用的主题名称
+paginate = 10                      # 每页显示的文章数量
+
+# 元数据
+[params]
+  author = "你的名字"              # 作者名称
+  description = "这是我的个人博客。" # 网站描述
+  showDateModified = true         # 显示文章最后修改时间
+  themeColor = "#ffffff"          # 主题颜色
+
+  # 启用/禁用功能`
+  ShowReadingTime = true          # 显示阅读时间
+  ShowTaxonomies = true           # 显示分类和标签
+  ShowPostNavLinks = true         # 启用文章导航链接
+  ShowBreadCrumbs = true          # 启用面包屑导航
+
+  # 评论（例如 Utterances 或 Disqus）
+  disableComments = false         # 是否禁用评论
+  # utterancesRepo = "用户名/仓库名"  # 如果使用 Utterances
+  # disqusShortname = "你的短名称"   # 如果使用 Disqus
+
+  # 社交链接
+  github = "https://github.com/你的用户名"
+  twitter = "https://twitter.com/你的用户名"
+  linkedin = "https://linkedin.com/in/你的用户名"
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    name = "分类"
+    url = "/categories/"
+    weight = 3
+
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 4
+
+# RSS 配置
+[outputs]
+  home = ["HTML", "RSS"]           # 启用 RSS 输出
+
+# Markdown 配置
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true                  # 启用 HTML 渲染（嵌入 HTML 内容）
+
+# 部署设置（可选）
+[deploy]
+  [[deploy.targets]]
+    name = "production"
+    URL = "sftp://example.com"
+    user = "your_username"
