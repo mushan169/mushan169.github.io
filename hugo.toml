@@ -2,7 +2,7 @@
 # （启动命令：压缩输出，主题目录为 ../..，基本 URL 为 http://0.0.0.0:1313/theme/hugo-book/）
 
 baseURL = 'https://mushan169-github-io.pages.dev/'
-title = 'Hugo Book'
+title = '肉蛋冲击'
 theme = 'hugo-book'
 
 # 书籍配置
@@ -59,7 +59,7 @@ enableGitInfo = true
 
   # 设置源代码仓库的位置。
   # 用于生成“最后修改”及“编辑此页”链接。
-  BookRepo = 'https://github.com/mushan169/mushan169.github.io.git'
+  BookRepo = 'https://github.com/mushan169/mushan169.github.io'
 
   # （可选，默认 'commit'）指定生成文档页面最后修改提交哈希链接时所使用的提交部分。
   # 需要设置 'BookRepo' 参数。
