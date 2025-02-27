@@ -1,71 +1,103 @@
-# 基本站点信息
-baseURL = "https://mushan169-github-io.pages.dev/"   # 你的站点 URL
-languageCode = "zh-cn"             # 语言代码
-title = "肉蛋冲击"                  # 网站标题
-theme = "PaperMod"                 # 使用的主题名称
-paginate = 10                      # 每页显示的文章数量
+# hugo server --minify --themesDir ../.. --baseURL=http://0.0.0.0:1313/theme/hugo-book/
+# （启动命令：压缩输出，主题目录为 ../..，基本 URL 为 http://0.0.0.0:1313/theme/hugo-book/）
 
-# 元数据
-[params]
-  author = "你的名字"              # 作者名称
-  description = "这是我的个人博客。" # 网站描述
-  showDateModified = true         # 显示文章最后修改时间
-  themeColor = "#ffffff"          # 主题颜色
+baseURL = 'https://mushan169-github-io.pages.dev/'
+title = 'Hugo Book'
+theme = 'hugo-book'
 
-  # 启用/禁用功能`
-  ShowReadingTime = true          # 显示阅读时间
-  ShowTaxonomies = true           # 显示分类和标签
-  ShowPostNavLinks = true         # 启用文章导航链接
-  ShowBreadCrumbs = true          # 启用面包屑导航
+# 书籍配置
+disablePathToLower = true
+enableGitInfo = true
 
-  # 评论（例如 Utterances 或 Disqus）
-  disableComments = false         # 是否禁用评论
-  # utterancesRepo = "用户名/仓库名"  # 如果使用 Utterances
-  # disqusShortname = "你的短名称"   # 如果使用 Disqus
-
-  # 社交链接
-  github = "https://github.com/你的用户名"
-  twitter = "https://twitter.com/你的用户名"
-  linkedin = "https://linkedin.com/in/你的用户名"
-
-# 菜单配置
-[menu]
-  [[menu.main]]
-    name = "首页"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    name = "关于"
-    url = "/about/"
-    weight = 2
-
-  [[menu.main]]
-    name = "分类"
-    url = "/categories/"
-    weight = 3
-
-  [[menu.main]]
-    name = "标签"
-    url = "/tags/"
-    weight = 4
-  [[menu.main]]
-    name = "博客 | Blog"
-    url = "/blogs/"
-    weight = 4
-
-# RSS 配置
-[outputs]
-  home = ["HTML", "RSS"]           # 启用 RSS 输出
-
-# Markdown 配置
+# mermaid/katex 短代码所需设置
 [markup]
-  [markup.goldmark.renderer]
-    unsafe = true                  # 启用 HTML 渲染（嵌入 HTML 内容）
+[markup.goldmark.renderer]
+  unsafe = true
 
-# 部署设置（可选）
-[deploy]
-  [[deploy.targets]]
-    name = "production"
-    URL = "sftp://example.com"
-    user = "your_username"
+[markup.tableOfContents]
+  startLevel = 1
+
+# 多语言模式配置
+# 翻译文件有多种选项
+# 参见 https://gohugo.io/content-management/multilingual/#translation-by-filename
+# 以及 https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+
+[menu]
+# [[menu.before]]
+[[menu.after]]
+  name = "博客 | Blog"
+  url = "https://github.com/alex-shpak/hugo-book"
+  weight = 10
+
+[[menu.after]]
+  name = "今日 | Daily"
+  url = "https://themes.gohugo.io/themes/hugo-book/"
+  weight = 20
+
+[params]
+  # （可选，默认 light）设置颜色主题：light、dark 或 auto。
+  # 当主题设置为 'auto' 时，会根据浏览器/操作系统的偏好自动在暗色和亮色之间切换。
+  BookTheme = 'auto'
+
+  # （可选，默认 true）控制页面右侧目录的显示。
+  # 目录的起始和结束级别可通过 markup.tableOfContents 设置进行控制。
+  # 你也可以在每个页面的 Front Matter 中单独指定此参数。
+  BookToC = true
+
+  # （可选，默认 favicon.png）设置 favicon 文件的路径。
+  # 如果 favicon 位于 /static/favicon.png，则路径为 favicon.png
+  # BookFavicon = '/static/img/favicon.ico'
+
+  # （可选，默认为空）设置书籍的 logo 路径。
+  # 如果 logo 位于 /static/logo.png，则路径为 logo.png
+  # BookLogo = 'logo.png'
+
+  # （可选，默认 docs）指定用于将子页面渲染为菜单的根页面。
+  # 页面通过 .GetPage 函数解析: https://gohugo.io/functions/getpage/
+  # 为了向后兼容，你也可以将值设置为 '*' 来将所有部分渲染为菜单，效果与 '/' 相同。
+  BookSection = 'docs'
+
+  # 设置源代码仓库的位置。
+  # 用于生成“最后修改”及“编辑此页”链接。
+  BookRepo = 'https://github.com/mushan169/mushan169.github.io.git'
+
+  # （可选，默认 'commit'）指定生成文档页面最后修改提交哈希链接时所使用的提交部分。
+  # 需要设置 'BookRepo' 参数。
+  # 该值用于构造一个 URL，其格式为 BookRepo/BookCommitPath/<commit-hash>。
+  # Github 使用 'commit'，Bitbucket 使用 'commits'
+  BookCommitPath = 'commit'
+
+  # 为文档页面类型启用“编辑此页”链接。
+  # 默认情况下为禁用状态。取消注释以启用。需要设置 'BookRepo' 参数。
+  # 编辑路径必须指向仓库的根目录。
+  BookEditPath = 'edit/main/exampleSite'
+
+  # 配置页面上使用的日期格式
+  # － 用于 Git 信息
+  # － 用于博客文章
+  BookDateFormat = 'January 2, 2006'
+
+  # （可选，默认 true）启用使用 flexsearch 的搜索功能，
+  # 索引会动态构建，因此可能会降低你网站的运行速度。
+  # 每种语言的索引配置可以在 i18n 文件夹中进行调整。
+  BookSearch = true
+
+  # （可选，默认 true）启用页面的评论模板。
+  # 默认情况下，partials/docs/comments.html 包含了 Disqus 模板。
+  # 参见 https://gohugo.io/content-management/comments/#configure-disqus
+  # 你也可以在页面 Front Matter 中覆盖此参数。
+  BookComments = true
+
+  # /!\ 警告：这是一个实验性功能，可能会随时被移除或更改
+  # （可选，实验性，默认 false）启用 Markdown 页面中的便携链接和链接检查功能。
+  # 便携链接旨在支持文本编辑器使用，让你在编写 Markdown 时无需使用 {{< relref >}} 短代码。
+  # 如果 Markdown 中引用的页面不存在，主题会发出警告。
+  BookPortableLinks = true
+
+  # /!\ 警告：这是一个实验性功能，可能会随时被移除或更改
+  # （可选，实验性，默认 false）启用服务工作者，用于缓存访问过的页面和资源，以支持离线使用。
+  BookServiceWorker = true
+
+  # /!\ 警告：这是一个实验性功能，可能会随时被移除或更改
+  # （可选，实验性，默认 false）仅当存在翻译时启用翻译下拉菜单。
+  BookTranslatedOnly = false
