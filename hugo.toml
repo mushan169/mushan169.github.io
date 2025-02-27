@@ -49,6 +49,10 @@ paginate = 10                      # 每页显示的文章数量
     name = "标签"
     url = "/tags/"
     weight = 4
+  [[menu.main]]
+    name = "博客 | Blog"
+    url = "/blogs/"
+    weight = 4
 
 # RSS 配置
 [outputs]
