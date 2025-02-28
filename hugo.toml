@@ -2,8 +2,17 @@
 # （启动命令：压缩输出，主题目录为 ../..，基本 URL 为 http://0.0.0.0:1313/theme/hugo-book/）
 
 baseURL = 'https://mushan169-github-io.pages.dev/'
-title = '肉蛋冲击'
+title = '笨蛋冲击'
 theme = 'hugo-book'
+
+# 开启文章分类
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+# 开启分页设置
+pagination.pagerSize = 10
+pagination.paginatePath = 'blog'
 
 # 书籍配置
 disablePathToLower = true
@@ -22,17 +31,33 @@ enableGitInfo = true
 # 参见 https://gohugo.io/content-management/multilingual/#translation-by-filename
 # 以及 https://gohugo.io/content-management/multilingual/#translation-by-content-directory
 
+
 [menu]
-# [[menu.before]]
-[[menu.after]]
-  name = "博客 | Blog"
-  url = "https://github.com/alex-shpak/hugo-book"
-  weight = 10
+[[menu.before]]
+  name = "首页 | Home"
+  url = "/"
+  weight = 1
 
 [[menu.after]]
-  name = "今日 | Daily"
-  url = "https://themes.gohugo.io/themes/hugo-book/"
+  name = "记录 | Record"
+  url = "/record/"
+  weight = 5
+
+[[menu.after]]
+  name = "博客 | Blog"
+  url = "/blog/"
+  weight = 10
+  
+[[menu.after]]
+  name = "每日 | Daily"
+  url = "/daily/"
+  weight = 15
+
+[[menu.after]]
+  name = "关于 | About"
+  url = "/about/"
   weight = 20
+
 
 [params]
   # （可选，默认 light）设置颜色主题：light、dark 或 auto。
@@ -55,7 +80,7 @@ enableGitInfo = true
   # （可选，默认 docs）指定用于将子页面渲染为菜单的根页面。
   # 页面通过 .GetPage 函数解析: https://gohugo.io/functions/getpage/
   # 为了向后兼容，你也可以将值设置为 '*' 来将所有部分渲染为菜单，效果与 '/' 相同。
-  BookSection = 'docs'
+  BookSection = ''
 
   # 设置源代码仓库的位置。
   # 用于生成“最后修改”及“编辑此页”链接。
@@ -70,7 +95,7 @@ enableGitInfo = true
   # 为文档页面类型启用“编辑此页”链接。
   # 默认情况下为禁用状态。取消注释以启用。需要设置 'BookRepo' 参数。
   # 编辑路径必须指向仓库的根目录。
-  BookEditPath = 'edit/main/exampleSite'
+  # BookEditPath = 'edit/main/exampleSite'
 
   # 配置页面上使用的日期格式
   # － 用于 Git 信息

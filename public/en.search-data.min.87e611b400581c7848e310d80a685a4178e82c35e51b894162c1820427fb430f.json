@@ -1,0 +1,1 @@
+[{"id":0,"href":"/daily/","title":"日记","section":"首页","content":"这里是日记页面\n"},{"id":1,"href":"/about/","title":"每日更新","section":"首页","content":"这里是每日更新的内容。\n"},{"id":2,"href":"/blog/","title":"博客","section":"首页","content":"欢迎来到我的博客！这里记录了我的学习笔记、技术分享和生活感悟。\n{{ \u0026lt;recent 20 \u0026gt; }}\n"},{"id":3,"href":"/record/","title":"记录","section":"首页","content":"是关于记录相关的页面\n"}]

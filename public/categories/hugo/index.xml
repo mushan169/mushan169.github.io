@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories/Hugo on 笨蛋冲击</title>
+    <link>http://localhost:1313/categories/hugo/</link>
+    <description>Recent content in Categories/Hugo on 笨蛋冲击</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo使用的记录</title>
+      <link>http://localhost:1313/blog/hugo_about/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/hugo_about/</guid>
+      <description>&lt;h1 id=&#34;关于hugo的记录&#34;&gt;&#xA;  关于Hugo的记录&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%85%b3%e4%ba%8ehugo%e7%9a%84%e8%ae%b0%e5%bd%95&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;常用的指令&#34;&gt;&#xA;  常用的指令&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b8%b8%e7%94%a8%e7%9a%84%e6%8c%87%e4%bb%a4&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-创建文章&#34;&gt;&#xA;  1. 创建文章&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#1-%e5%88%9b%e5%bb%ba%e6%96%87%e7%ab%a0&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;单个md文件&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h4 id=&#34;创建文章的方式&#34;&gt;&#xA;  创建文章的方式：&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%88%9b%e5%bb%ba%e6%96%87%e7%ab%a0%e7%9a%84%e6%96%b9%e5%bc%8f&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;手动创建：在post目录下，手动创建md文件。&lt;br&gt;&#xA;命令创建：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new post/*.md  &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;单个md文件的创建，md文件的命名是随意的，web上显示的与文章的title属性有关，而与文件名无关。&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>
