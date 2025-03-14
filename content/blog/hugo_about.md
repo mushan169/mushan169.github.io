@@ -3,6 +3,7 @@ date : 2024-02-28
 title : 'hugo使用的记录'
 tags : ["hugo","introducation"]
 categories : ["hugo"]   
+type: "blog"  
 summary: "hugo使用的记录"
 ---
 # 关于Hugo的记录

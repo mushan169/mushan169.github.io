@@ -1,6 +1,7 @@
 ---
 date : 2024-02-27
 title : '这是我的第一个文章'
+type: "blog"  
 summary : '这是我的第一个文章'
 ---
 ## Introduction
