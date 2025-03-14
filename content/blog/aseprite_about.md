@@ -1,8 +1,8 @@
 ---
 date : 2024-02-28
 title : '关于Aseprite的使用'
-type : "post"
 tags : ["aseprite","introducation"]
+summary : 'Aseprite记录（个人常用）'
 ---
 
 # Aseprite记录（个人常用） 

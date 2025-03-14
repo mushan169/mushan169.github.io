@@ -18,6 +18,10 @@ pagination.paginatePath = 'blog'
 disablePathToLower = true
 enableGitInfo = true
 
+# 摘要自动生成的字符长度
+summaryLength = 70
+
+
 # mermaid/katex 短代码所需设置
 [markup]
 [markup.goldmark.renderer]
@@ -41,22 +45,27 @@ enableGitInfo = true
 [[menu.after]]
   name = "记录 | Record"
   url = "/record/"
-  weight = 5
+  weight = 2
 
 [[menu.after]]
   name = "博客 | Blog"
   url = "/blog/"
-  weight = 10
+  weight = 3
   
 [[menu.after]]
   name = "每日 | Daily"
   url = "/daily/"
-  weight = 15
+  weight = 4
+
+[[menu.after]]
+  name = "绘画 | Draw"
+  url = "/draw/"
+  weight = 5
 
 [[menu.after]]
   name = "关于 | About"
   url = "/about/"
-  weight = 20
+  weight = 6
 
 
 [params]
@@ -67,7 +76,7 @@ enableGitInfo = true
   # （可选，默认 true）控制页面右侧目录的显示。
   # 目录的起始和结束级别可通过 markup.tableOfContents 设置进行控制。
   # 你也可以在每个页面的 Front Matter 中单独指定此参数。
-  BookToC = true
+  # $BookToC = true
 
   # （可选，默认 favicon.png）设置 favicon 文件的路径。
   # 如果 favicon 位于 /static/favicon.png，则路径为 favicon.png
@@ -80,7 +89,7 @@ enableGitInfo = true
   # （可选，默认 docs）指定用于将子页面渲染为菜单的根页面。
   # 页面通过 .GetPage 函数解析: https://gohugo.io/functions/getpage/
   # 为了向后兼容，你也可以将值设置为 '*' 来将所有部分渲染为菜单，效果与 '/' 相同。
-  BookSection = ''
+  # BookSection = ''
 
   # 设置源代码仓库的位置。
   # 用于生成“最后修改”及“编辑此页”链接。
@@ -117,12 +126,12 @@ enableGitInfo = true
   # （可选，实验性，默认 false）启用 Markdown 页面中的便携链接和链接检查功能。
   # 便携链接旨在支持文本编辑器使用，让你在编写 Markdown 时无需使用 {{< relref >}} 短代码。
   # 如果 Markdown 中引用的页面不存在，主题会发出警告。
-  BookPortableLinks = true
+  # BookPortableLinks = true
 
   # /!\ 警告：这是一个实验性功能，可能会随时被移除或更改
   # （可选，实验性，默认 false）启用服务工作者，用于缓存访问过的页面和资源，以支持离线使用。
-  BookServiceWorker = true
+  # BookServiceWorker = true
 
   # /!\ 警告：这是一个实验性功能，可能会随时被移除或更改
   # （可选，实验性，默认 false）仅当存在翻译时启用翻译下拉菜单。
-  BookTranslatedOnly = false
+  # BookTranslatedOnly = false

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags/Pixel on 笨蛋冲击</title>
+    <link>http://localhost:1313/tags/pixel/</link>
+    <description>Recent content in Tags/Pixel on 笨蛋冲击</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pixel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pixel Logic的笔记</title>
+      <link>http://localhost:1313/draw/pixellogic/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/draw/pixellogic/</guid>
+      <description>&lt;h1 id=&#34;pixel-logic的笔记&#34;&gt;&#xA;  Pixel Logic的笔记&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#pixel-logic%e7%9a%84%e7%ac%94%e8%ae%b0&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;第一部分-入门&#34;&gt;&#xA;  第一部分 入门：&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86-%e5%85%a5%e9%97%a8&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;使用工具：Aseprite&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;sprite： 精灵，是2D游戏中最常见的显示图像的方式，在节点上添加sprite组件，就可以在场景中显示项目资源的图片。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;sprite放缩的比例：最好是整数倍&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;对锯齿的处理：不要用更大的像素来包围一行像素&#xA;&lt;img src=&#34;http://localhost:1313/img/pixelLogic/%e9%94%af%e9%bd%bf%e5%a4%84%e7%90%86%e7%a4%ba%e4%be%8b%e5%9b%be.png&#34; alt=&#34;锯齿处理示例图&#34; /&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;center&gt;锯齿处理示例图&lt;/center&gt;&#xD;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;还有一种判断锯齿是否正确的方法，是把线条想象为矢量线条。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;黑色内嵌像素画：带有黑色线条的精灵，偶尔也会出现在精灵内部&lt;/li&gt;&#xA;&lt;li&gt;不同的轮廓线会改变一种精灵的美术风格，任何阶段都会应用线稿&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/pixelLogic/%e4%b8%8d%e5%90%8c%e8%bd%ae%e5%bb%93%e7%ba%bf%e9%a3%8e%e6%a0%bc%e5%b1%95%e7%a4%ba.png&#34; alt=&#34;不同轮廓线风格展示&#34; /&gt;&lt;/p&gt;&#xA;&lt;center&gt;不同轮廓线下的风格展示&lt;/center&gt;&#xD;&#xA;&lt;h2 id=&#34;第二部分-抗锯齿&#34;&gt;&#xA;  第二部分 抗锯齿&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86-%e6%8a%97%e9%94%af%e9%bd%bf&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;抗锯齿的全称为：Anti-Aliased（AA）&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;抗锯齿的例子：&#xA;&lt;img src=&#34;http://localhost:1313/img/pixelLogic/temmie%e7%9a%84%e4%be%8b%e5%ad%90%e4%b8%ad%e6%9d%a5%e8%ae%b2%e6%8a%97%e9%94%af%e9%bd%bf.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;center&gt;动画师temmie的抗锯齿例子&lt;/center&gt;&#xD;&#xA;&lt;p&gt;抗锯齿的技巧：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;曲线越陡，使用的颜色越少&lt;/li&gt;&#xA;&lt;li&gt;轮廓线颜色深浅的选取：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;中间为浅色，两侧为深色。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;中间为深色，两侧为浅色。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./images/outwards%e8%bd%ae%e5%bb%93%e9%a2%9c%e8%89%b2%e9%80%89%e5%8f%96.png&#34; alt=&#34;&#34; /&gt;&#xA;&lt;img src=&#34;./images/inwards%e8%bd%ae%e5%bb%93%e9%a2%9c%e8%89%b2%e9%80%89%e5%8f%96.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

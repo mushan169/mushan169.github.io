@@ -23,6 +23,20 @@
       <description></description>
     </item>
     <item>
+      <title>Tags/Problem</title>
+      <link>http://localhost:1313/tags/problem/</link>
+      <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/problem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tags/Pixel Art</title>
+      <link>http://localhost:1313/tags/pixel-art/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pixel-art/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Introducation</title>
       <link>http://localhost:1313/tags/introducation/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>

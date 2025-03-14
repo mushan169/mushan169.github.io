@@ -1,9 +1,9 @@
 ---
 date : 2024-02-28
 title : 'hugo使用的记录'
-type : "post"
 tags : ["hugo","introducation"]
 categories : ["hugo"]   
+summary: "hugo使用的记录"
 ---
 # 关于Hugo的记录
 

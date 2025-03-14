@@ -3,6 +3,7 @@ date : 2024-02-28
 title : '这是Daily的记录'
 type : "post"
 tag : "daily"
+summary : "这是Daily_1的记录"
 ---
 ## Introduction
 
