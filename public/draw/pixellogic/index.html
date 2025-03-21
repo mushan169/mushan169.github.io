@@ -17,14 +17,14 @@
     <meta property="article:section" content="draw">
     <meta property="article:published_time" content="2024-03-13T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-03-13T00:00:00+00:00">
-    <meta property="article:tag" content="Tags/Pixel Art">
+    <meta property="article:tag" content="Pixel Art">
 <title>Pixel Logic的笔记 | 笨蛋冲击</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
 <link rel="canonical" href="http://localhost:1313/draw/pixellogic/">
 <link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.cc0bca43997f6d5bf151b17b0da45aa4be059105a9b8d9f81a312a4f01713097.js" integrity="sha256-zAvKQ5l/bVvxUbF7DaRapL4FkQWpuNn4GjEqTwFxMJc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.307c07740b2938add46eec3df2f3d3ecc0bbd8dabc1ab77f34d7f029123651a4.js" integrity="sha256-MHwHdAspOK3Ubuw98vPT7MC72Nq8Grd/NNfwKRI2UaQ=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -114,6 +114,12 @@ https://github.com/alex-shpak/hugo-book
   </li>
   
   <li>
+    <a href="/read/"  target="_self" rel="noopener">
+        阅读 | Read
+      </a>
+  </li>
+  
+  <li>
     <a href="/about/"  target="_self" rel="noopener">
         关于 | About
       </a>
@@ -166,6 +172,25 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#第一部分-入门">第一部分 入门：</a></li>
         <li><a href="#第二部分-抗锯齿">第二部分 抗锯齿</a></li>
+        <li><a href="#第三部分-色彩">第三部分 色彩</a>
+          <ul>
+            <li><a href="#色调变换">色调变换</a></li>
+            <li><a href="#饱和度">饱和度</a></li>
+          </ul>
+        </li>
+        <li><a href="#第四部分-可读性">第四部分 可读性</a>
+          <ul>
+            <li><a href="#手部的绘画">手部的绘画</a></li>
+            <li><a href="#眼睛的绘画">眼睛的绘画</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#第五部分-抖动">第五部分 抖动</a>
+      <ul>
+        <li><a href="#抖动的基本内容">抖动的基本内容</a></li>
+        <li><a href="#风格化抖动">风格化抖动</a></li>
+        <li><a href="#第六部分-游戏视角">第六部分 游戏视角</a></li>
       </ul>
     </li>
   </ul>
@@ -241,8 +266,118 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<p><img src="./images/outwards%e8%bd%ae%e5%bb%93%e9%a2%9c%e8%89%b2%e9%80%89%e5%8f%96.png" alt="" />
-<img src="./images/inwards%e8%bd%ae%e5%bb%93%e9%a2%9c%e8%89%b2%e9%80%89%e5%8f%96.png" alt="" /></p>
+<p><img src="/img/pixelLogic/outwards%e8%bd%ae%e5%bb%93%e9%a2%9c%e8%89%b2%e9%80%89%e5%8f%96.png" alt="" />
+<img src="/img/pixelLogic/inwards%e8%bd%ae%e5%bb%93%e9%a2%9c%e8%89%b2%e9%80%89%e5%8f%96.png" alt="" /></p>
+<center>不同轮廓线的效果图</center>
+<ul>
+<li>使用不同的颜色会让线条更粗或者更细
+<ul>
+<li>深色 = 较厚</li>
+<li>浅色 = 较细</li>
+</ul>
+</li>
+</ul>
+<p><img src="/img/pixelLogic/%e4%b8%8d%e5%90%8c%e9%a2%9c%e8%89%b2%e7%9a%84%e9%80%89%e5%8f%96%e4%bd%bf%e7%ba%bf%e6%9d%a1%e7%b2%97%e7%bb%86%e4%b8%8d%e5%90%8c.png" alt="" /></p>
+<center>不同颜色选取的效果图</center>
+- 要尽量避免色带的出现
+<h2 id="第三部分-色彩">
+  第三部分 色彩
+  <a class="anchor" href="#%e7%ac%ac%e4%b8%89%e9%83%a8%e5%88%86-%e8%89%b2%e5%bd%a9">#</a>
+</h2>
+<blockquote>
+<p>色相：Hue；饱和度：Saturation；值：Value
+小技巧：</p>
+</blockquote>
+<ul>
+<li>HSV相同的值表示不同的灰色；</li>
+<li></li>
+</ul>
+<h3 id="色调变换">
+  色调变换
+  <a class="anchor" href="#%e8%89%b2%e8%b0%83%e5%8f%98%e6%8d%a2">#</a>
+</h3>
+<ul>
+<li>黄色是彩虹最亮的颜色；紫色是彩虹最暗的颜色。</li>
+</ul>
+<h3 id="饱和度">
+  饱和度
+  <a class="anchor" href="#%e9%a5%b1%e5%92%8c%e5%ba%a6">#</a>
+</h3>
+<p>尽量避免使用纯黑色，可以使用深棕色、深紫色、深绿色甚至是深灰色进行替代。<br>
+作者喜欢的深紫色：（R，G，B）= （84，58，84）</p>
+<ul>
+<li>重复使用颜色，使自己的调色板更小。</li>
+</ul>
+<blockquote>
+<p>色彩是关于背景的。它不只是创造你的像素艺术的情绪或气氛，它还定义了风格。色彩很容易骗过眼睛，只要多加练习，你就能把它们运用到你的优势。</p>
+</blockquote>
+<h2 id="第四部分-可读性">
+  第四部分 可读性
+  <a class="anchor" href="#%e7%ac%ac%e5%9b%9b%e9%83%a8%e5%88%86-%e5%8f%af%e8%af%bb%e6%80%a7">#</a>
+</h2>
+<ul>
+<li>绘制一个粗略的轮廓基础，然后用细节来进行填充，这是一个很好的练习方式。尽量不要叠加东西，如果出现这种情况，用色彩来进行填充。</li>
+<li>尽可能找到能看到德最小的部分</li>
+</ul>
+<h3 id="手部的绘画">
+  手部的绘画
+  <a class="anchor" href="#%e6%89%8b%e9%83%a8%e7%9a%84%e7%bb%98%e7%94%bb">#</a>
+</h3>
+<ol>
+<li>从线稿开始</li>
+<li>把手画得像手套一样，再添加细节</li>
+<li>专注于食指和拇指。它们确立了手</li>
+<li>可以的话，可以只画三只手和拇指</li>
+<li>用不同的颜色来划分不同的手</li>
+<li>画出手掌，缩小后作为参考</li>
+</ol>
+<h3 id="眼睛的绘画">
+  眼睛的绘画
+  <a class="anchor" href="#%e7%9c%bc%e7%9d%9b%e7%9a%84%e7%bb%98%e7%94%bb">#</a>
+</h3>
+<ol>
+<li>眼睛是重点</li>
+<li>有时候眼睛没有空间</li>
+<li>眼镜：可以画得简单一点</li>
+<li>放大后，几个像素就会有很大区别</li>
+<li>眼睛的风格有很多，但是不要回避像素细节</li>
+<li>如果需要，使用细微的抗锯齿</li>
+</ol>
+<blockquote>
+<p>尺寸很重要，但是像素更重要
+易读性的符号
+设计于比例</p>
+</blockquote>
+<h1 id="第五部分-抖动">
+  第五部分 抖动
+  <a class="anchor" href="#%e7%ac%ac%e4%ba%94%e9%83%a8%e5%88%86-%e6%8a%96%e5%8a%a8">#</a>
+</h1>
+<blockquote>
+<p>抖动的等级：跳棋、十字、方块、钻石等。</p>
+</blockquote>
+<h2 id="抖动的基本内容">
+  抖动的基本内容
+  <a class="anchor" href="#%e6%8a%96%e5%8a%a8%e7%9a%84%e5%9f%ba%e6%9c%ac%e5%86%85%e5%ae%b9">#</a>
+</h2>
+<p><img src="/img/pixelLogic/%e6%8a%96%e5%8a%a8%e7%9a%84%e4%b8%8d%e5%90%8c%e7%ad%89%e7%ba%a7.png" alt="" /></p>
+<center>抖动的不同等级</center>
+<p>交织抖动如果操作有困难，可以制作两层抖动进行交织。</p>
+<blockquote>
+<p>大多数情况下，不要使用随机抖动</p>
+</blockquote>
+<h2 id="风格化抖动">
+  风格化抖动
+  <a class="anchor" href="#%e9%a3%8e%e6%a0%bc%e5%8c%96%e6%8a%96%e5%8a%a8">#</a>
+</h2>
+<blockquote>
+<p>纹理和渐变不是同一个东西。
+纹理是材质的感觉；渐变是明到暗的过渡。</p>
+</blockquote>
+<p>最后：少即是多</p>
+<h2 id="第六部分-游戏视角">
+  第六部分 游戏视角
+  <a class="anchor" href="#%e7%ac%ac%e5%85%ad%e9%83%a8%e5%88%86-%e6%b8%b8%e6%88%8f%e8%a7%86%e8%a7%92">#</a>
+</h2>
 </article>
  
       
@@ -288,6 +423,25 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#第一部分-入门">第一部分 入门：</a></li>
         <li><a href="#第二部分-抗锯齿">第二部分 抗锯齿</a></li>
+        <li><a href="#第三部分-色彩">第三部分 色彩</a>
+          <ul>
+            <li><a href="#色调变换">色调变换</a></li>
+            <li><a href="#饱和度">饱和度</a></li>
+          </ul>
+        </li>
+        <li><a href="#第四部分-可读性">第四部分 可读性</a>
+          <ul>
+            <li><a href="#手部的绘画">手部的绘画</a></li>
+            <li><a href="#眼睛的绘画">眼睛的绘画</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#第五部分-抖动">第五部分 抖动</a>
+      <ul>
+        <li><a href="#抖动的基本内容">抖动的基本内容</a></li>
+        <li><a href="#风格化抖动">风格化抖动</a></li>
+        <li><a href="#第六部分-游戏视角">第六部分 游戏视角</a></li>
       </ul>
     </li>
   </ul>

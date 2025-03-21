@@ -6,8 +6,22 @@
     <description>Recent content in 我的博客文章 on 笨蛋冲击</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Mar 2025 18:06:56 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记录1</title>
+      <link>http://localhost:1313/record/words/%E8%AE%B0%E5%BD%951/</link>
+      <pubDate>Sun, 16 Mar 2025 18:06:56 +0800</pubDate>
+      <guid>http://localhost:1313/record/words/%E8%AE%B0%E5%BD%951/</guid>
+      <description>&lt;p&gt;一段摘取于知乎评论的文字&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>这里关于我个人和网站的介绍</description>
+    </item>
     <item>
       <title>日语学习记录</title>
       <link>http://localhost:1313/record/japanese/</link>
@@ -30,10 +44,24 @@
       <description>这里是 Pixel Logic的笔记</description>
     </item>
     <item>
+      <title>图书阅读记录</title>
+      <link>http://localhost:1313/read/booklist/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/read/booklist/</guid>
+      <description>&lt;p&gt;图书阅读列表&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>百年孤独的阅读记录</title>
+      <link>http://localhost:1313/read/%E7%99%BE%E5%B9%B4%E5%AD%A4%E7%8B%AC/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/read/%E7%99%BE%E5%B9%B4%E5%AD%A4%E7%8B%AC/</guid>
+      <description>&lt;p&gt;这里是百年孤独阅读的感受&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>hugo使用的记录</title>
-      <link>http://localhost:1313/blog/hugo_about/</link>
+      <link>http://localhost:1313/record/hugo_about/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/hugo_about/</guid>
+      <guid>http://localhost:1313/record/hugo_about/</guid>
       <description>hugo使用的记录</description>
     </item>
     <item>

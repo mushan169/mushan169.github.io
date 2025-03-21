@@ -30,10 +30,17 @@
       <description></description>
     </item>
     <item>
-      <title>Tags/Pixel Art</title>
+      <title>Pixel Art</title>
       <link>http://localhost:1313/tags/pixel-art/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/pixel-art/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tags/Read</title>
+      <link>http://localhost:1313/tags/read/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/read/</guid>
       <description></description>
     </item>
     <item>

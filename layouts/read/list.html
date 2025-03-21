@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <!-- 替换主内容区域 -->
+  <article class="markdown">
+    <h1>{{ .Title }}</h1>
+    <!-- 显示文章摘要，不显示全文 -->
+    {{ if .Summary }}
+      {{ .Summary }}
+
+    {{ else }}
+      <!-- 如果没有摘要则可以选择截取部分内容或者不显示 -->
+      {{ .Content | truncate 300 }}
+
+    {{ end }}
+    <!-- 美化后的文章列表 -->
+    <div class="article-list">
+      {{ range where .Site.RegularPages "Section" "read" }}
+        <div class="article-item">
+          <h2 class="article-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          <div class="article-meta">
+            <time class="article-date">{{ .Date.Format "2006-01-02" }}</time>
+            {{ if .Params.tags }}
+              <div class="article-tags">
+                {{ range .Params.tags }}
+                  <a href="/tags/{{ . | urlize }}" class="tag">#{{ . }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+          {{ if .Summary }}
+            <p class="article-summary">{{ .Summary }}</p>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+    <!-- 分页导航 -->
+    {{ template "_internal/pagination.html" . }}
+  </article>
+{{ end }}
