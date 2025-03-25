@@ -2,7 +2,7 @@
 # （启动命令：压缩输出，主题目录为 ../..，基本 URL 为 http://0.0.0.0:1313/theme/hugo-book/）
 
 baseURL = 'https://mushan169-github-io.pages.dev/'
-title = '笨蛋冲击'
+title = '天体观测'
 theme = 'hugo-book'
 
 # 开启文章分类
