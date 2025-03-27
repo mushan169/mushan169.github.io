@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>阅读 on 笨蛋冲击</title>
+    <title>阅读 on 天体观测</title>
     <link>http://localhost:1313/read/</link>
-    <description>Recent content in 阅读 on 笨蛋冲击</description>
+    <description>Recent content in 阅读 on 天体观测</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="http://localhost:1313/read/index.xml" rel="self" type="application/rss+xml" />

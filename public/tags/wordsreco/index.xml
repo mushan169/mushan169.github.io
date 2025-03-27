@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags/WordsReco on 天体观测</title>
+    <link>http://localhost:1313/tags/wordsreco/</link>
+    <description>Recent content in Tags/WordsReco on 天体观测</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Mar 2025 20:47:26 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/wordsreco/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图书馆的大魔法师</title>
+      <link>http://localhost:1313/record/words/%E8%AE%B0%E5%BD%952/</link>
+      <pubDate>Thu, 27 Mar 2025 20:47:26 +0800</pubDate>
+      <guid>http://localhost:1313/record/words/%E8%AE%B0%E5%BD%952/</guid>
+      <description>&lt;p&gt;图书馆的大魔法师 文本记录&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 笨蛋冲击</title>
+    <title>Tags on 天体观测</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on 笨蛋冲击</description>
+    <description>Recent content in Tags on 天体观测</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Mar 2025 20:47:26 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tags/文字记录</title>
+      <link>http://localhost:1313/tags/%E6%96%87%E5%AD%97%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 27 Mar 2025 20:47:26 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E6%96%87%E5%AD%97%E8%AE%B0%E5%BD%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tags/漫画</title>
+      <link>http://localhost:1313/tags/%E6%BC%AB%E7%94%BB/</link>
+      <pubDate>Thu, 27 Mar 2025 20:47:26 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E6%BC%AB%E7%94%BB/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tags/Diary</title>
       <link>http://localhost:1313/tags/diary/</link>

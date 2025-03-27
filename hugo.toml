@@ -16,7 +16,7 @@ pagination.paginatePath = 'blog'
 
 # 书籍配置
 disablePathToLower = true
-enableGitInfo = true
+enableGitInfo = true 
 
 # 摘要自动生成的字符长度
 summaryLength = 70
