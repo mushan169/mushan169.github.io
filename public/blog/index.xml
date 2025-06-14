@@ -5,7 +5,7 @@
     <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blog on 天体观测</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>zh-cn</language>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

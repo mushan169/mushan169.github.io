@@ -5,7 +5,7 @@ type : "post"
 tag : "daily"
 summary : "这是Daily_1的记录"
 ---
-## Introduction
+## 你好呀
 
 This is **bold** text, and this is *emphasized* text.
 

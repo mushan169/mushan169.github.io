@@ -1,482 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="zh-CN">
+
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <link rel="stylesheet" href="/css/list.css">
-
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="这里是 Pixel Logic的笔记">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/draw/pixellogic/">
-  <meta property="og:site_name" content="天体观测">
-  <meta property="og:title" content="Pixel Logic的笔记">
-  <meta property="og:description" content="这里是 Pixel Logic的笔记">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="draw">
-    <meta property="article:published_time" content="2024-03-13T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-03-13T00:00:00+00:00">
-    <meta property="article:tag" content="Pixel Art">
-<title>Pixel Logic的笔记 | 天体观测</title>
-<link rel="icon" href="/favicon.png" >
-<link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/draw/pixellogic/">
-<link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
-  <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.6c799a3dda5e3972728e781179b235acfc5b6068f821bbbfd48860ac39fa4264.js" integrity="sha256-bHmaPdpeOXJyjngRebI1rPxbYGj4Ibu/1IhgrDn6QmQ=" crossorigin="anonymous"></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
+  <meta charset="UTF-8" />
+  <title>Pixel Logic的笔记</title>
   
+  <link rel="stylesheet" href="/css/main.min.css">
+
 </head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>天体观测</span>
-  </a>
-</h2>
+
+<body>
+  <header class="max-w-6xl mx-auto py-4 px-6 text-center">
 
 
-<div class="book-search hidden">
-  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-<script>document.querySelector(".book-search").classList.remove("hidden")</script>
-
-
-
-
-
-
-
-  
-<ul>
-  
-  <li>
-    <a href="/"  target="_self" rel="noopener">
-        首页 | Home
-      </a>
-  </li>
-  
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-<ul>
-  
-  <li>
-    <a href="/record/"  target="_self" rel="noopener">
-        记录 | Record
-      </a>
-  </li>
-  
-  <li>
-    <a href="/blog/"  target="_self" rel="noopener">
-        博客 | Blog
-      </a>
-  </li>
-  
-  <li>
-    <a href="/daily/"  target="_self" rel="noopener">
-        每日 | Daily
-      </a>
-  </li>
-  
-  <li>
-    <a href="/draw/"  target="_self" rel="noopener">
-        绘画 | Draw
-      </a>
-  </li>
-  
-  <li>
-    <a href="/read/"  target="_self" rel="noopener">
-        阅读 | Read
-      </a>
-  </li>
-  
-  <li>
-    <a href="/about/"  target="_self" rel="noopener">
-        关于 | About
-      </a>
-  </li>
-  
-</ul>
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <h3>Pixel Logic的笔记</h3>
-
-  <label for="toc-control">
     
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    <p class="text-sm text-gray-500 mb-1">梦想是成为插画家・正在学习像素画中</p>
+
     
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#pixel-logic的笔记">Pixel Logic的笔记</a>
-      <ul>
-        <li><a href="#第一部分-入门">第一部分 入门：</a></li>
-        <li><a href="#第二部分-抗锯齿">第二部分 抗锯齿</a></li>
-        <li><a href="#第三部分-色彩">第三部分 色彩</a>
-          <ul>
-            <li><a href="#色调变换">色调变换</a></li>
-            <li><a href="#饱和度">饱和度</a></li>
-          </ul>
-        </li>
-        <li><a href="#第四部分-可读性">第四部分 可读性</a>
-          <ul>
-            <li><a href="#手部的绘画">手部的绘画</a></li>
-            <li><a href="#眼睛的绘画">眼睛的绘画</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#第五部分-抖动">第五部分 抖动</a>
-      <ul>
-        <li><a href="#抖动的基本内容">抖动的基本内容</a></li>
-        <li><a href="#风格化抖动">风格化抖动</a></li>
-        <li><a href="#第六部分-游戏视角">第六部分 游戏视角</a></li>
-        <li><a href="#第七部分-清洗">第七部分 清洗</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown book-article"><h1 id="pixel-logic的笔记">
-  Pixel Logic的笔记
-  <a class="anchor" href="#pixel-logic%e7%9a%84%e7%ac%94%e8%ae%b0">#</a>
-</h1>
-<h2 id="第一部分-入门">
-  第一部分 入门：
-  <a class="anchor" href="#%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86-%e5%85%a5%e9%97%a8">#</a>
-</h2>
-<ol>
-<li>
-<p>使用工具：Aseprite</p>
-</li>
-<li>
-<p>sprite： 精灵，是2D游戏中最常见的显示图像的方式，在节点上添加sprite组件，就可以在场景中显示项目资源的图片。</p>
-</li>
-<li>
-<p>sprite放缩的比例：最好是整数倍</p>
-</li>
-<li>
-<p>对锯齿的处理：不要用更大的像素来包围一行像素
-<img src="/img/pixelLogic/%e9%94%af%e9%bd%bf%e5%a4%84%e7%90%86%e7%a4%ba%e4%be%8b%e5%9b%be.png" alt="锯齿处理示例图" /></p>
-</li>
-</ol>
-<center>锯齿处理示例图</center>
-<blockquote>
-<p>还有一种判断锯齿是否正确的方法，是把线条想象为矢量线条。</p>
-</blockquote>
-<ol>
-<li>黑色内嵌像素画：带有黑色线条的精灵，偶尔也会出现在精灵内部</li>
-<li>不同的轮廓线会改变一种精灵的美术风格，任何阶段都会应用线稿</li>
-</ol>
-<p><img src="/img/pixelLogic/%e4%b8%8d%e5%90%8c%e8%bd%ae%e5%bb%93%e7%ba%bf%e9%a3%8e%e6%a0%bc%e5%b1%95%e7%a4%ba.png" alt="不同轮廓线风格展示" /></p>
-<center>不同轮廓线下的风格展示</center>
-<h2 id="第二部分-抗锯齿">
-  第二部分 抗锯齿
-  <a class="anchor" href="#%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86-%e6%8a%97%e9%94%af%e9%bd%bf">#</a>
-</h2>
-<blockquote>
-<p>抗锯齿的全称为：Anti-Aliased（AA）</p>
-</blockquote>
-<p>抗锯齿的例子：
-<img src="/img/pixelLogic/temmie%e7%9a%84%e4%be%8b%e5%ad%90%e4%b8%ad%e6%9d%a5%e8%ae%b2%e6%8a%97%e9%94%af%e9%bd%bf.png" alt="" /></p>
-<center>动画师temmie的抗锯齿例子</center>
-<p>抗锯齿的技巧：</p>
-<ul>
-<li>曲线越陡，使用的颜色越少</li>
-<li>轮廓线颜色深浅的选取：
-<ul>
-<li>
-<ol>
-<li>中间为浅色，两侧为深色。</li>
-</ol>
-</li>
-<li>
-<ol start="2">
-<li>中间为深色，两侧为浅色。</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="/img/pixelLogic/outwards%e8%bd%ae%e5%bb%93%e9%a2%9c%e8%89%b2%e9%80%89%e5%8f%96.png" alt="" />
-<img src="/img/pixelLogic/inwards%e8%bd%ae%e5%bb%93%e9%a2%9c%e8%89%b2%e9%80%89%e5%8f%96.png" alt="" /></p>
-<center>不同轮廓线的效果图</center>
-<ul>
-<li>使用不同的颜色会让线条更粗或者更细
-<ul>
-<li>深色 = 较厚</li>
-<li>浅色 = 较细</li>
-</ul>
-</li>
-</ul>
-<p><img src="/img/pixelLogic/%e4%b8%8d%e5%90%8c%e9%a2%9c%e8%89%b2%e7%9a%84%e9%80%89%e5%8f%96%e4%bd%bf%e7%ba%bf%e6%9d%a1%e7%b2%97%e7%bb%86%e4%b8%8d%e5%90%8c.png" alt="" /></p>
-<center>不同颜色选取的效果图</center>
-- 要尽量避免色带的出现
-<h2 id="第三部分-色彩">
-  第三部分 色彩
-  <a class="anchor" href="#%e7%ac%ac%e4%b8%89%e9%83%a8%e5%88%86-%e8%89%b2%e5%bd%a9">#</a>
-</h2>
-<blockquote>
-<p>色相：Hue；饱和度：Saturation；值：Value
-小技巧：</p>
-</blockquote>
-<ul>
-<li>HSV相同的值表示不同的灰色；</li>
-<li></li>
-</ul>
-<h3 id="色调变换">
-  色调变换
-  <a class="anchor" href="#%e8%89%b2%e8%b0%83%e5%8f%98%e6%8d%a2">#</a>
-</h3>
-<ul>
-<li>黄色是彩虹最亮的颜色；紫色是彩虹最暗的颜色。</li>
-</ul>
-<h3 id="饱和度">
-  饱和度
-  <a class="anchor" href="#%e9%a5%b1%e5%92%8c%e5%ba%a6">#</a>
-</h3>
-<p>尽量避免使用纯黑色，可以使用深棕色、深紫色、深绿色甚至是深灰色进行替代。<br>
-作者喜欢的深紫色：（R，G，B）= （84，58，84）</p>
-<ul>
-<li>重复使用颜色，使自己的调色板更小。</li>
-</ul>
-<blockquote>
-<p>色彩是关于背景的。它不只是创造你的像素艺术的情绪或气氛，它还定义了风格。色彩很容易骗过眼睛，只要多加练习，你就能把它们运用到你的优势。</p>
-</blockquote>
-<h2 id="第四部分-可读性">
-  第四部分 可读性
-  <a class="anchor" href="#%e7%ac%ac%e5%9b%9b%e9%83%a8%e5%88%86-%e5%8f%af%e8%af%bb%e6%80%a7">#</a>
-</h2>
-<ul>
-<li>绘制一个粗略的轮廓基础，然后用细节来进行填充，这是一个很好的练习方式。尽量不要叠加东西，如果出现这种情况，用色彩来进行填充。</li>
-<li>尽可能找到能看到德最小的部分</li>
-</ul>
-<h3 id="手部的绘画">
-  手部的绘画
-  <a class="anchor" href="#%e6%89%8b%e9%83%a8%e7%9a%84%e7%bb%98%e7%94%bb">#</a>
-</h3>
-<ol>
-<li>从线稿开始</li>
-<li>把手画得像手套一样，再添加细节</li>
-<li>专注于食指和拇指。它们确立了手</li>
-<li>可以的话，可以只画三只手和拇指</li>
-<li>用不同的颜色来划分不同的手</li>
-<li>画出手掌，缩小后作为参考</li>
-</ol>
-<h3 id="眼睛的绘画">
-  眼睛的绘画
-  <a class="anchor" href="#%e7%9c%bc%e7%9d%9b%e7%9a%84%e7%bb%98%e7%94%bb">#</a>
-</h3>
-<ol>
-<li>眼睛是重点</li>
-<li>有时候眼睛没有空间</li>
-<li>眼镜：可以画得简单一点</li>
-<li>放大后，几个像素就会有很大区别</li>
-<li>眼睛的风格有很多，但是不要回避像素细节</li>
-<li>如果需要，使用细微的抗锯齿</li>
-</ol>
-<blockquote>
-<p>尺寸很重要，但是像素更重要
-易读性的符号
-设计于比例</p>
-</blockquote>
-<h1 id="第五部分-抖动">
-  第五部分 抖动
-  <a class="anchor" href="#%e7%ac%ac%e4%ba%94%e9%83%a8%e5%88%86-%e6%8a%96%e5%8a%a8">#</a>
-</h1>
-<blockquote>
-<p>抖动的等级：跳棋、十字、方块、钻石等。</p>
-</blockquote>
-<h2 id="抖动的基本内容">
-  抖动的基本内容
-  <a class="anchor" href="#%e6%8a%96%e5%8a%a8%e7%9a%84%e5%9f%ba%e6%9c%ac%e5%86%85%e5%ae%b9">#</a>
-</h2>
-<p><img src="/img/pixelLogic/%e6%8a%96%e5%8a%a8%e7%9a%84%e4%b8%8d%e5%90%8c%e7%ad%89%e7%ba%a7.png" alt="" /></p>
-<center>抖动的不同等级</center>
-<p>交织抖动如果操作有困难，可以制作两层抖动进行交织。</p>
-<blockquote>
-<p>大多数情况下，不要使用随机抖动</p>
-</blockquote>
-<h2 id="风格化抖动">
-  风格化抖动
-  <a class="anchor" href="#%e9%a3%8e%e6%a0%bc%e5%8c%96%e6%8a%96%e5%8a%a8">#</a>
-</h2>
-<blockquote>
-<p>纹理和渐变不是同一个东西。
-纹理是材质的感觉；渐变是明到暗的过渡。</p>
-</blockquote>
-<p>最后：少即是多</p>
-<h2 id="第六部分-游戏视角">
-  第六部分 游戏视角
-  <a class="anchor" href="#%e7%ac%ac%e5%85%ad%e9%83%a8%e5%88%86-%e6%b8%b8%e6%88%8f%e8%a7%86%e8%a7%92">#</a>
-</h2>
-<blockquote>
-<p>这部分内容在其他的地方也被称作透视</p>
-</blockquote>
-<h2 id="第七部分-清洗">
-  第七部分 清洗
-  <a class="anchor" href="#%e7%ac%ac%e4%b8%83%e9%83%a8%e5%88%86-%e6%b8%85%e6%b4%97">#</a>
-</h2>
-<p>当目标是缩小精灵时，必须牺牲细节。
-通常情况下，先大后小比先小后大更好。</p>
-</article>
- 
-      
-
-      <footer class="book-footer">
+    <div class="flex items-center justify-center gap-4 mb-4">
         
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
+        <h1 class="text-xl sm:text-2xl font-medium">
+            カフカ / <span class="font-bold tracking-wide text-xl sm:text-2xl">SODA</span>
+        </h1>
     </div>
 
     
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#pixel-logic的笔记">Pixel Logic的笔记</a>
-      <ul>
-        <li><a href="#第一部分-入门">第一部分 入门：</a></li>
-        <li><a href="#第二部分-抗锯齿">第二部分 抗锯齿</a></li>
-        <li><a href="#第三部分-色彩">第三部分 色彩</a>
-          <ul>
-            <li><a href="#色调变换">色调变换</a></li>
-            <li><a href="#饱和度">饱和度</a></li>
-          </ul>
-        </li>
-        <li><a href="#第四部分-可读性">第四部分 可读性</a>
-          <ul>
-            <li><a href="#手部的绘画">手部的绘画</a></li>
-            <li><a href="#眼睛的绘画">眼睛的绘画</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#第五部分-抖动">第五部分 抖动</a>
-      <ul>
-        <li><a href="#抖动的基本内容">抖动的基本内容</a></li>
-        <li><a href="#风格化抖动">风格化抖动</a></li>
-        <li><a href="#第六部分-游戏视角">第六部分 游戏视角</a></li>
-        <li><a href="#第七部分-清洗">第七部分 清洗</a></li>
-      </ul>
+<nav class="">
+  <ul class="flex flex-wrap justify-center text-xl font-bold tracking-wide ">
+    <li class="flex gap-6 items-center menu-list ">
+      
+      <a href="/" class="hover:text-orange-500">
+        Home
+      </a>
+      
+      
+      <a href="/record/" class="hover:text-orange-500">
+        Record
+      </a>
+      
+      <a href="/blog/" class="hover:text-orange-500">
+        Blog
+      </a>
+      
+      <a href="/daily/" class="hover:text-orange-500">
+        Daily
+      </a>
+      
+      <a href="/draw/" class="hover:text-orange-500">
+        Draw
+      </a>
+      
+      <a href="/read/" class="hover:text-orange-500">
+        Read
+      </a>
+      
+      <a href="/about/" class="hover:text-orange-500">
+        Profile
+      </a>
+      
     </li>
   </ul>
 </nav>
 
 
- 
-      </div>
-    </aside>
+
+    
+    
+</header>
+
+<style>
+    .menu-list a:not(:first-child)::before {
+        content: "|";
+        margin: 0 30px;
+        color: #d1d5db;
+    }
+
+</style>
+  
+  <main>
+    
     
   </main>
 
   
+<div class="max-w-6xl mx-auto text-center">
+    &copy; 2025 . All Rights Reserved.
+</div>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,46 @@
+<header class="max-w-6xl mx-auto py-4 px-6 text-center">
+  <p class="text-sm text-gray-500 mb-1">梦想是成为插画家・正在学习像素画中</p>
+  <div class="flex items-center justify-center gap-4 mb-4">
+    <h1 class="text-xl sm:text-8xl font-medium;display: flex;">
+      <span style="font-family: 'tsukushimarugothic', meiryo, 'ヒラギノ角ゴ Pro W3', sans-serif;">カフカ</span> / <span
+        class="font-bold tracking-wide text-xl sm:text-2xl">SODA</span>
+    </h1>
+  </div>
+
+  <nav>
+    <ul class="flex flex-wrap justify-center text-xl font-bold tracking-wide ">
+      <li class="flex gap-6 items-center menu-list ">
+        {{range .Site.Menus.main}}
+        <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent " after" . }}text-orange-500{{ else }}hover:text-orange-500{{
+          end }}">
+          {{ .Name }}
+        </a>
+        {{end}}
+        {{range .Site.Menus.after}}
+        <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent " after" . }}text-orange-500{{ else }}hover:text-orange-500{{
+          end }}">
+          {{ .Name }}
+        </a>
+        {{end}}
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <!-- 社交图标 -->
+  {{/* <div class="flex justify-center gap-4 mt-3">
+    <a href="https://x.com/your-id"><img src="/icons/x.svg" alt="X" class="h-5"></a>
+    <a href="https://youtube.com/your-id"><img src="/icons/youtube.svg" alt="YouTube" class="h-5"></a>
+    <a href="https://twitch.tv/your-id"><img src="/icons/twitch.svg" alt="Twitch" class="h-5"></a>
+    <a href="https://booth.pm/your-id"><img src="/icons/booth.svg" alt="Booth" class="h-5"></a>
+  </div> */}}
+</header>
+
+<style>
+  .menu-list a:not(:first-child)::before {
+    content: "|";
+    margin: 0 30px;
+    color: #d1d5db;
+  }
+</style>

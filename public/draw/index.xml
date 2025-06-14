@@ -5,7 +5,7 @@
     <link>http://localhost:1313/draw/</link>
     <description>Recent content in 绘画 on 天体观测</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>zh-cn</language>
     <atom:link href="http://localhost:1313/draw/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

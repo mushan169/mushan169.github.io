@@ -4,6 +4,10 @@
 baseURL = 'https://mushan169-github-io.pages.dev/'
 title = '天体观测'
 theme = 'hugo-book'
+languageCode = 'zh-cn'
+
+
+
 
 # 开启文章分类
 [taxonomies]
@@ -27,6 +31,11 @@ summaryLength = 70
 [markup.goldmark.renderer]
   unsafe = true
 
+
+[markup.postCSS]
+  use = ["postcss"]
+    includePaths = ["assets/css"]
+
 [markup.tableOfContents]
   startLevel = 1
 
@@ -37,43 +46,45 @@ summaryLength = 70
 
 
 [menu]
-[[menu.before]]
-  name = "首页 | Home"
+[[menu.main]]
+  name = "Home"
   url = "/"
   weight = 1
 
 [[menu.after]]
-  name = "记录 | Record"
+  name = "Record"
   url = "/record/"
   weight = 2
 
 [[menu.after]]
-  name = "博客 | Blog"
+  name = "Blog"
   url = "/blog/"
   weight = 3
   
 [[menu.after]]
-  name = "每日 | Daily"
+  name = "Daily"
   url = "/daily/"
   weight = 4
 
 [[menu.after]]
-  name = "绘画 | Draw"
+  name = "Draw"
   url = "/draw/"
   weight = 5
 
 [[menu.after]]
-name = "阅读 | Read"
+name = "Read"
 url = "/read/"
 weight = 6
 
 [[menu.after]]
-  name = "关于 | About"
+  name = "Profile"
   url = "/about/"
   weight = 7
 
 
 [params]
+  author = "SODA/MUSHAN0413"
+
   # light、dark、auto（auto跟随系统主题）
   BookTheme = 'auto'
 
